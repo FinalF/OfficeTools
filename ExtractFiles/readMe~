@@ -1,0 +1,3 @@
+pullFileFromFolders [sourceFileFolder] [DestinationFileFolder]
+
+it will copy all the files in the source file folder into the destination folder.

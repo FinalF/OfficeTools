@@ -1,0 +1,7 @@
+pullFileFromFolders [sourceFileFolder] [DestinationFileFolder]
+
+it will copy all the files in the source file folder into the destination folder.
+
+e.x.:
+./pullFileFromFolders /home/tue86025/Desktop/sourcefolder /home/tue86025/Desktop/destifolder
+
