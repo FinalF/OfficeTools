@@ -1,0 +1,9 @@
+filePull [sourceFileFolder] [DestinationFileFolder]
+
+v3:it will copy all the files in the source file folder into the destination folder. Compared with v2, in this version, all the files will be renamed by adding the name of its parent folder, so that fieles from different folders with the same name will not be overwritten.
+v4: compared with v3, it is able to rename files in the destination folder numerally
+e.x.:
+python filePull /home/tue86025/Desktop/sourcefolder /home/tue86025/Desktop/destifolder
+
+
+
