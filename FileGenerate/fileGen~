@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#----randomly pick out files from a folder and concatenate them as a big file---
+
+
+if [ $# != 2 ]
+then
+    echo "Usage: test.sh inputfolderPath outputfolderPath"
+else
+    cd $1
+    pwd
+#    echo ls -l | wc -l 
+    fnum=$(($(ls -l | wc -l)-1))
+    echo "file num is $fnum"
+#--------randomly pickout files and concatthem----------
+
+for((i=1;i<=$fnum;i++))
+do
+file=$(shuf -i 1-$fnum -n 1)
+echo "file is $file"
+cp $file $2/$i
+done
+
+
+    
+fi
