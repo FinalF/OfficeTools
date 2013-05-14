@@ -26,6 +26,7 @@ def cpfile(src,dst):
       shutil.copy(newfilepath,dst)
 
 def rename(dst):
+ print 'start to rename'
  count=0 
  for i in os.listdir(dst):
    count+=1
